@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="32.38344">
+<testcase classname="To verify the login functionality" name="To verify the login" time="20.938468">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.identity.Login.user_enter_the_and(Login.java:34)&#13;&#10;&#9;at ✽.User enter the &quot;userkmanoj@gmail.com&quot; and &quot;Manoj@1995&quot;(file:src/test/resources/Featurefile/1Login.feature:8)&#13;&#10;"><![CDATA[Given user launches identitydirect application..............................passed
+And To validate login using Different credentials...........................passed
+When User enter the "userkmanoj@gmail.com" and "Manoj@1995".................failed
+And User click login button.................................................skipped
+Then user sees the result based on "passed".................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.identity.Login.user_enter_the_and(Login.java:34)
+	at ✽.User enter the "userkmanoj@gmail.com" and "Manoj@1995"(file:src/test/resources/Featurefile/1Login.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To verify the login functionality" name="To verify the login 2" time="11.444972">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.identity.Login.user_enter_the_and(Login.java:34)&#13;&#10;&#9;at ✽.User enter the &quot;manoj@152525gmail.com&quot; and &quot;wsdf@852&quot;(file:src/test/resources/Featurefile/1Login.feature:8)&#13;&#10;"><![CDATA[Given user launches identitydirect application..............................passed
+And To validate login using Different credentials...........................passed
+When User enter the "manoj@152525gmail.com" and "wsdf@852"..................failed
+And User click login button.................................................skipped
+Then user sees the result based on "failed".................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.identity.Login.user_enter_the_and(Login.java:34)
+	at ✽.User enter the "manoj@152525gmail.com" and "wsdf@852"(file:src/test/resources/Featurefile/1Login.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
